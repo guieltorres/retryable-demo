@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+retry:
+  backoff:
+    delay: ${RETRY_DEMO_DELAY:10000}
+    multiplier: ${RETRY_DEMO_DELAY:5}
+    maxDelay: ${RETRY_DEMO_DELAY:1380000}
+    maxAttempts: ${RETRY_DEMO_DELAY:5}
